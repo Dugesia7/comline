@@ -1,0 +1,56 @@
+#include<cstdio>
+#include<cstdlib>
+#include"GN.h"
+
+//constants
+const int MaxWordLength 256
+const char GNDName[]="GNdata.txt"
+
+//GNthread: What GaiNet consist with.
+typedef struct{
+	char subj[MaxWordLength];
+	char obj[MaxWordLength];
+	char rel[MaxWordLength];
+} GNthread;
+
+//command prototypes
+char* add(char filename[], GNthread*);
+//other prototypes
+int dictcomp(char*,char*);
+
+int main(){
+	
+
+}
+
+//command functions
+
+char* add(char filename[], GNthread* input){
+	FILE* fp=fopen(filename,"r");
+	if(fp!=NULL){
+		GNthread temp;
+		while(fscanf(fp,"%s%s%s",head->subj,head->obj,head->rel)==EOF)
+			if()//on work
+	}
+
+}
+
+//other functions
+
+//dictionary comparison
+//if word1 is earlier, return 1
+//if word2 is earlier, return -1
+//if equal, return 0
+int dictcomp(char* word1,char* word2){
+	int i;
+	for(i=0;i>=0;i++){
+		if(word1[i]<word2[i])
+			i=-1;
+		else if(word1[i]>word2[i])
+			i=-3;
+		else if(word1[i]=='\0')
+                        i=-2;
+	}
+	return i+2
+
+}
